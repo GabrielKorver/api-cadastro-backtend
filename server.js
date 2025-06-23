@@ -6,12 +6,15 @@ import express from "express";
 import dotenv from "dotenv";
 import mongoose from "mongoose";
 import usuario from "./usuario.js";
+import cors from 'cors'
 
 dotenv.config();
+
 
 const app = express();
 const PORT = 3000;
 
+app.use(cors()); 
 
 // transforma tudo em json
 app.use(express.json());
