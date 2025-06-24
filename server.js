@@ -31,7 +31,7 @@ const connetDB = async () => {
 connetDB();
 
 
-// Criando os usuários
+// Criando os usuários post
 
 app.post("/usuario", async (req, res) => {
 
@@ -44,7 +44,7 @@ app.post("/usuario", async (req, res) => {
 });
 
 
-// Buscando os usuarios
+// Buscando os usuarios get
 
 app.get("/usuario", async (req, res) => {
     try {
@@ -56,7 +56,7 @@ app.get("/usuario", async (req, res) => {
 });
 
 
-// Atualizando o usuario
+// Atualizando o usuario put
 
 app.put("/usuario/:id", async (req, res) => {
     try {
@@ -71,7 +71,7 @@ app.put("/usuario/:id", async (req, res) => {
     }
 });
 
-// Deletando usuario
+// Deletando usuario delete
 
 app.delete("/usuario/:id", async (req, res) => {
     try {

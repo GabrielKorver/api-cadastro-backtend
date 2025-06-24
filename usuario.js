@@ -6,5 +6,4 @@ const usuarioSchema = new mongoose.Schema({
     "email": String,
     "senha": String,
 })
-
 export default mongoose.model('usuario', usuarioSchema)
